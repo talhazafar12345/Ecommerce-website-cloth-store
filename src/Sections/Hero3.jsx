@@ -22,7 +22,7 @@ function Hero3() {
 
        <div>
         <Link className="hero3-image">
-          <img src="https://chawkbazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fsmall%2Fbanner-1.jpg&w=640&q=100" alt="" />
+          <img src="https://chawkbazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fsmall%2Fbanner-2.jpg&w=640&q=100" alt="" />
         </Link>
     </div>
 

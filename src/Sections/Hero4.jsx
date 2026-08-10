@@ -6,8 +6,6 @@ function Hero4() {
   return (
 
 
-
-    
     <div className="hero4-heading">
 
     <h1>Shop by category</h1>

@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 function Hero6() {
   const images = [
     {
+        
       src: "https://chawkbazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fbrands%2Fclub-shoes.png&w=384&q=100",
       name:"Club Shoes",
    

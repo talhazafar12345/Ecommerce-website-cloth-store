@@ -18,13 +18,7 @@ function Hero5() {
         <h1>New Arrivals</h1>
     </div>
 
-
-
-
-
     <div className="hero5-flex">
-
-
     <div className="hero5-para">
         <Link className="hero5-link">
           

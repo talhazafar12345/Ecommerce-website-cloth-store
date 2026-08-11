@@ -15,7 +15,7 @@ function Hero4() {
     
     <div className="hero4-para">
 
-    <Link className="hero4-image">
+    <Link to={"/bags-page"} className="hero4-image">
      <img src="https://chawkbazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fcategory%2Fbags.jpg&w=384&q=100" alt="" />
     </Link>
      <p>Bags</p>

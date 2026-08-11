@@ -427,14 +427,12 @@ margin-top: 100px;
   display: block;
   margin-bottom: 18px;
 }
-
 .footer-brand p {
   color: #666;
   font-size: 14px;
   line-height: 1.8;
   width: 80%;
 }
-
 .footer-column {
   flex: 1;
   display: flex;
@@ -442,26 +440,93 @@ margin-top: 100px;
   align-items: flex-start;
   gap: 14px;
 }
-
 .footer-column h3 {
   color: #222;
   font-size: 17px;
 }
-
 .footer-column a {
   color: #666;
   font-size: 14px;
   text-decoration: none;
   transition: all 0.2s ease;
 }
-
 .footer-column a:hover {
   color: #111;
 }
-
 .env{
 color: #222;
 }
+.hero10{
+position: relative;
+}
+.hero10-image img{
+width: 100%;
+}
+.hero10-content{
+position: absolute;
+top: 40%;
+left: 18%;
+}
+.hero10-content h2{
+font-size: 50px;
+}
+.product-container {
+  width: 91%;
+margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 90px;
+}
+.product-card {
+  display: block;
+  text-decoration: none;
+  color: #222;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  padding-bottom: 13px;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.product-card img {
+  width: 100%;
+  height: 380px;
+}
+.product-card{
+text-align: center;
+}
+.product-card h2 {
+font-size:16px;
+  color: #222;
+  font-weight: 500;
+padding-top: 20px;
+font-weight: bolder;
+margin: auto;
+}
+.product-card p {
+  display: inline-block;
+  margin:5px ;
+  font-size: 18px;
+  color: #222;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+.old-price{
+text-decoration: line-through;
+}
+.product-card p:last-child {
+  color: #999;
+}
+.fti{
+margin-top: 60px;
+}
+
+
 
 
 
@@ -802,6 +867,60 @@ margin-top: 20px;
   font-size: 16px;
 }
 
+
+ .hero10-content {
+    top: 30%;
+    left: 8%;
+  }
+
+  .hero10-content h2 {
+    font-size: 28px;
+  }
+  
+
+.hero10-image img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    object-position: 80% center;
+
+}
+
+
+.product-container {
+    width: 88%;
+    margin:  auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 60px;
+  }
+
+  .product-card {
+    padding-bottom: 10px;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .product-card h2 {
+    font-size: 13px;
+    padding-top: 12px;
+    line-height: 1.4;
+    width: 90%;
+  }
+
+  .product-card p {
+    font-size: 15px;
+    margin: 4px;
+    padding-top: 6px;
+  }
+
+  .fti {
+    margin-top: 40px;
+  }
 
 
 

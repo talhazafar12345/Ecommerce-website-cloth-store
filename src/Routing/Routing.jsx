@@ -1,3 +1,4 @@
+import Bags from "../Pages/Bags"
 import Home from "../Pages/Home"
 
 
@@ -8,6 +9,12 @@ function Routing() {
         {
             path: "/",
             element: <Home />
+        },
+        
+
+         {
+            path: "/bags-page",
+            element: <Bags />
         },
 
      

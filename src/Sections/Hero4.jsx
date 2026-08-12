@@ -46,17 +46,15 @@ function Hero4() {
 
 
         <div className="hero4-para">
-        <Link className="hero4-image">
+        <Link to={`/sun-page`} className="hero4-image">
          <img src="https://chawkbazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fcategory%2Fsunglass.jpg&w=384&q=100" alt="" />
         </Link>
         <p>Sun Glasses</p>
     </div>
 
 
-
-    
         <div className="hero4-para">
-        <Link className="hero4-image">
+        <Link to={`/watch-page`} className="hero4-image">
          <img src="https://chawkbazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fcategory%2Fwatch.jpg&w=384&q=100" alt="" />
         </Link>
         <p>Watch</p>

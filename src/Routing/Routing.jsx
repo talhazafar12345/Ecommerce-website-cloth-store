@@ -11,6 +11,10 @@ import Shoes from "../Pages/Shoes"
 import Hero17 from "../Sections/Hero17"
 import Hero21 from "../Sections/Hero21"
 import Sports from "../Pages/Sports"
+import Hero24 from "../Sections/Hero24"
+import Sun from "../Pages/Sun"
+import Hero27 from "../Sections/Hero27"
+import Watch from "../Pages/Watch"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -39,6 +43,22 @@ function Routing() {
             element: <Sports />
         },
 
+            {
+            path: "/sun-page",
+            element: <Sun />
+        },
+
+              {
+            path: "/watch-page",
+            element: <Watch />
+        },
+
+
+             {
+            path: "/sun-page",
+            element: <Sun />
+        },
+
           {
             path: "/bags/detail/:id",
             element: <Hero12 />
@@ -60,6 +80,21 @@ function Routing() {
             path: "/sports/detail/:id",
             element: <Hero21 />
         },
+
+
+        {
+            path: "/sun/detail/:id",
+            element: <Hero24 />
+        },
+
+
+        
+        {
+            path: "/watch/detail/:id",
+            element: <Hero27 />
+        },
+
+
 
 
 

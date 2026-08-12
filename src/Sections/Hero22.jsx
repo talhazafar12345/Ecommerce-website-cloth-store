@@ -16,7 +16,7 @@ function Hero22() {
     </div>
 
     <div className="hero10-content">
-        <h2>#Sun Glasses</h2>
+        <h2>#Glasses</h2>
     </div>
 
    </div>

@@ -23,7 +23,7 @@ function Hero4() {
     </div>
 
     <div className="hero4-para">
-        <Link className="hero4-image">
+        <Link to={"/kids-page"} className="hero4-image">
           <img src="https://chawkbazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fcategory%2Fkid.jpg&w=256&q=100" alt="" />
         </Link>
        <p>Kids</p>

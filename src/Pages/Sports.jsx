@@ -1,21 +1,23 @@
 import Footer from "../Footer/Footer"
+import Hero19 from "../Sections/Hero19"
 import { useEffect } from "react"
-import Hero18 from "../Sections/Hero18"
 
 
 
 
-function Shoes() {
+function Sports() {
 
 useEffect(()=>{
+
 window.scrollTo(0,0)
 },[])
   return (
     <div>
 
-    <Hero18 />
-    
-    <div className="fti">
+
+    <Hero19 />
+
+     <div className="fti">
     <Footer />
     </div>
       
@@ -23,4 +25,4 @@ window.scrollTo(0,0)
   )
 }
 
-export default Shoes
+export default Sports

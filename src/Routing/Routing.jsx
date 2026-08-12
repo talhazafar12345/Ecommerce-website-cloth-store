@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Hero12 from "../Sections/Hero12"
 import Kids from "../Pages/Kids"
 import Hero15 from "../Sections/Hero15"
+import Shoes from "../Pages/Shoes"
+import Hero17 from "../Sections/Hero17"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -26,6 +28,11 @@ function Routing() {
         },
 
           {
+            path: "/shoes-page",
+            element: <Shoes />
+        },
+
+          {
             path: "/bags/detail/:id",
             element: <Hero12 />
         },
@@ -36,7 +43,14 @@ function Routing() {
         },
 
 
-,
+          {
+            path: "/shoes/detail/:id",
+            element: <Hero17 />
+        },
+
+
+
+
 
 
      

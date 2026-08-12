@@ -6,6 +6,7 @@ import Hero4 from "../Sections/Hero4"
 import Hero5 from "../Sections/Hero5"
  import Hero6 from "../Sections/Hero6"
 import Hero7 from "../Sections/Hero7"
+import { useEffect } from "react"
 
 
 
@@ -14,6 +15,11 @@ import Hero7 from "../Sections/Hero7"
 
 
 function NavBar() {
+
+useEffect(()=>{
+window.scrollTo(0,0)
+},[])
+
   return (
     <div>
 

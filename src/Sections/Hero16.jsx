@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import Hero1 from "./Hero1"
 
 
 
@@ -117,7 +116,7 @@ newPrice:"$8",
   return (
     <div>
 
-    <Hero1 />
+
    <div className="product-container">
     {
     products.map((item,index)=>(

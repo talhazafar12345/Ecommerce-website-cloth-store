@@ -1,6 +1,6 @@
 import Footer from "../Footer/Footer"
-import Hero16 from "../Sections/Hero16"
 import { useEffect } from "react"
+import Hero18 from "../Sections/Hero18"
 
 
 
@@ -13,7 +13,7 @@ window.scrollTo(0,0)
   return (
     <div>
 
-    <Hero16 />
+    <Hero18 />
     
     <div className="fti">
     <Footer />

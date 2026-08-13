@@ -204,59 +204,13 @@ margin-top: 100px;
   text-align: center;
 }
 
-.hero5-image img {
-  width: 1200px;
-  height: 300px;
 
+.new-arr{
+  text-align: center;
+  margin-top: 90px;
 }
 
 
-.hero5-heading{
-text-align: center;
-}
-
-.hero5-heading h1{
-font-size: 36px;
-}
-
-.hero5-link{
-
-  text-decoration: none;
-  color: #2E2F2F;
-
-}
-
-.hero5-link img{
-width:280px;
-margin-top: 40px;
-}
-
-
-
-.hero5-para{
-text-align: center;
-transition: transform 0.3s ease;
-
-}
-
-.hero5-para:hover{
-  transform: translateY(-8px);
-}
-
-
-.hero5-para h2{
-width: 90%;
-margin: auto;
-font-size: 19px;
-margin-top: 20px;
-line-height: 1.5;
-}
-
-.hero5-flex{
-display: flex;
-justify-content: center;
-gap: 20px;
-}
 
 
 

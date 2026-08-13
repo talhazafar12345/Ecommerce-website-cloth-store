@@ -15,6 +15,7 @@ import Hero24 from "../Sections/Hero24"
 import Sun from "../Pages/Sun"
 import Hero27 from "../Sections/Hero27"
 import Watch from "../Pages/Watch"
+import Hero28 from "../Sections/Hero28"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -93,6 +94,12 @@ function Routing() {
             path: "/watch/detail/:id",
             element: <Hero27 />
         },
+
+        {
+            path: "/new-arrival/detail/:id",
+            element: <Hero28 />
+        },
+
 
 
 

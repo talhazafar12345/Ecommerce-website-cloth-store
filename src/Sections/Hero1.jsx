@@ -6,15 +6,18 @@
 
 import { useState,useEffect} from "react";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { cartContext } from "./Hero30";
 
 
 function Hero1() {
-  const[open,setOpen] = useState(false)
-  
+
+const {cart} = useContext(cartContext)
+
+
+const[open,setOpen] = useState(false)
 useEffect(() => {
-
   return () => {
-
     document.body.style.position = "";
     document.body.style.width = "";
     document.body.style.top = "";
@@ -61,7 +64,7 @@ setOpen(false)
         <div className="add-cart">
           <Link  className="add-link">
           <i className="fa-solid fa-cart-arrow-down add"></i>
-          <span className="cart-count">0</span>
+          <span className="cart-count">{cart.length}</span>
           </Link>
         </div>
         <div onClick={openMenu}  className="hamburger">

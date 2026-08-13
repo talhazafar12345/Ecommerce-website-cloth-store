@@ -5,9 +5,13 @@ import { useParams } from "react-router-dom"
 import Hero1 from "./Hero1"
 import Footer from "../Footer/Footer"
 import { useEffect } from "react"
+import { cartContext } from "./Hero30"
+import { useContext } from "react"
 
 
 function Hero12() {
+
+const {addToCart} = useContext(cartContext)
 
 useEffect(()=>{
 window.scrollTo(0,0)
@@ -157,7 +161,7 @@ window.scrollTo(0,0)
                         <p>Old Price <span className="old-price">{item.oldPrice}</span> </p>
                     )
                 }
-                <button>Add To Cart</button>
+                <button onClick={()=>addToCart(item)}>Add To Cart</button>
             </div>
 
 

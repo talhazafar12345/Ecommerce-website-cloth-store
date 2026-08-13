@@ -62,7 +62,7 @@ setOpen(false)
           <Link  className="link">Admin</Link>
         </div>
         <div className="add-cart">
-          <Link  className="add-link">
+          <Link to={`/cart-page`}  className="add-link">
           <i className="fa-solid fa-cart-arrow-down add"></i>
           <span className="cart-count">{cart.length}</span>
           </Link>

@@ -36,12 +36,21 @@ setCart(increase)
 
 const decreaseQuantity=(cartId)=>{
 const decrease = cart.map((item)=> item.cartId === cartId ? {...item,quantity:item.quantity-1}:item)
+.filter((item)=> item.quantity > 0)
 setCart(decrease)
 }
 
+const totalPrice = cart.reduce((total,item) => {
+  return total + item.quantity * item.newPrice
+}, 0)
+
+const remove=(cartId)=>{
+const del = cart.filter((item)=> item.cartId !==cartId)
+setCart(del)
+}
 
   return (
-   <cartContext.Provider value={{cart,addToCart,increaseQuantity,decreaseQuantity}}>
+   <cartContext.Provider value={{cart,addToCart,increaseQuantity,decreaseQuantity,totalPrice,remove}}>
     {children}
 </cartContext.Provider>
   )

@@ -16,6 +16,7 @@ import Sun from "../Pages/Sun"
 import Hero27 from "../Sections/Hero27"
 import Watch from "../Pages/Watch"
 import Hero28 from "../Sections/Hero28"
+import Cart from "../Pages/Cart"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -98,6 +99,12 @@ function Routing() {
         {
             path: "/new-arrival/detail/:id",
             element: <Hero28 />
+        },
+
+        
+        {
+            path: "/cart-page",
+            element: <Cart />
         },
 
 

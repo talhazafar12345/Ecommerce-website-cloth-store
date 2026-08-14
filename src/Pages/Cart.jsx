@@ -42,7 +42,7 @@ cart.length === 0 ? (
             <th>Image</th>
             <th>Price</th>
             <th>Quantity</th>
-            <th>Action</th>
+        
           </tr>
         </thead>
 
@@ -52,8 +52,10 @@ cart.length === 0 ? (
             cart.map((item)=>(
 
               <tr>
-                <td><img src={item.image} width="100px" alt="" /></td>
-                <td className="newPrice"> $ {item.newPrice}</td>
+                <td><img className="item-image" src={item.image} width="100px" alt="" /></td>
+                 <td>
+                  <p className="newPrice">$ {item.newPrice}</p>
+                </td>
                 <td>
                   <div className="qty-box">
                     <button className="qty-btn" onClick={()=>decreaseQuantity(item.cartId)}>-</button>
@@ -61,9 +63,8 @@ cart.length === 0 ? (
                     <button className="qty-btn" onClick={()=>increaseQuantity(item.cartId)}>+</button>
                   </div>
                 </td>
-                <td>
-                  <button onClick={()=>remove(item.cartId)} className="remove-btn">Remove</button>
-                </td>
+
+               
               </tr>
             ))
           }

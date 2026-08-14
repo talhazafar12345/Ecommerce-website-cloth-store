@@ -144,7 +144,7 @@ const item = products.find((item)=> item.id === Number(id))
                 <img src={item.image} alt="" />
                 <h2> {item.title}</h2>
                 <p className="des">{item.description}</p>
-                <p>Price: {item.newPrice}</p>
+                <p>New Price: {item.newPrice}</p>
                 {
                     item.oldPrice && (
                         <p>Old Price <span className="old-price">{item.oldPrice}</span> </p>

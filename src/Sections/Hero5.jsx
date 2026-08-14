@@ -31,7 +31,7 @@ newPrice:22,
 id:78,
 image:"https://chawkbazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fancient%2F4.jpg&w=384&q=100",
 title:"Roadster Women Round Neck",
-newprice:33,
+newPrice:33,
 }
 ]
 

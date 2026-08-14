@@ -17,6 +17,7 @@ import Hero27 from "../Sections/Hero27"
 import Watch from "../Pages/Watch"
 import Hero28 from "../Sections/Hero28"
 import Cart from "../Pages/Cart"
+import Checkout from "../Pages/Checkout"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -106,6 +107,14 @@ function Routing() {
             path: "/cart-page",
             element: <Cart />
         },
+
+         {
+            path: "/checkout-page",
+            element: <Checkout />
+        },
+
+
+
 
 
 

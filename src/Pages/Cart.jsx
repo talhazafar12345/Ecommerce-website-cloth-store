@@ -5,11 +5,14 @@ import Hero1 from "../Sections/Hero1"
 import { cartContext } from "../Sections/Hero30"
 import { useContext } from "react"
 import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 
 
 function Cart() {
+
+const navigate= useNavigate()
 
 useEffect(()=>{
 window.scrollTo(0,0)
@@ -75,64 +78,16 @@ cart.length === 0 ? (
       {
       cart.length > 0 && (
         <div className="cart-btn">
-          <button>Check Out </button>
+          <button onClick={()=>navigate(`/checkout-page`)}>Check Out </button>
         </div>
       )
       }
 
     </div>
-
-
-
-
-
 )
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
     </div>
   )
 }

@@ -74,11 +74,13 @@ function Hero6() {
       slidesPerView: 3,
       spaceBetween: 8,
     },
-    
-    769: {
-      slidesPerView: 4,
-      spaceBetween: 10,
+
+     500: {
+      slidesPerView: 3,
+      spaceBetween: 8,
     },
+    
+    
     1101: {
       slidesPerView: 6,
       spaceBetween: 10,

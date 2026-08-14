@@ -1232,6 +1232,29 @@ margin: auto;
    width: 70%;
   }
 
+  .hero31-inp input{
+  margin-left: 0;
+  width: 90%;
+  }
+
+  .hero31-tn{
+  text-align: center;
+  }
+
+.hero31{
+margin-top: 50px;
+}
+  .hero31-btn{
+  text-align: center;
+  }
+
+  .hero31-btn button{
+     margin-left: 0;
+     
+  }
+
+
+
 
 
   

@@ -1134,11 +1134,15 @@ margin: auto;
     width:50%;
     text-align: center;
     font-size: 18px;
-    padding: 10px;
   }
 
   .item-image {
   width:50%;
+  }
+
+  .cart-container h1{
+    font-size: 23px;
+    text-align: center;
   }
 
   .cart-table th,

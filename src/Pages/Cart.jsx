@@ -65,12 +65,14 @@ cart.length === 0 ? (
                     <span className="newPrice">{item.quantity}</span>
                     <button className="qty-btn" onClick={()=>increaseQuantity(item.cartId)}>+</button>
                   </div>
+                  
                 </td>
 
                
               </tr>
             ))
           }
+
         </tbody>
       </table>
 

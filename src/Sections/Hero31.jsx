@@ -1,7 +1,14 @@
 
 import Hero1 from "./Hero1"
 import { useState } from "react"
+import { cartContext } from "./Hero30"
+import { useContext } from "react"
+import axios from "axios"
+
+
 function Hero31() {
+
+const {cart,totalPrice,clearCart} = useContext(cartContext)
 const[errors,setErrors] = useState({})
 const[formData,setFormData] = useState({
 name:"",
@@ -30,7 +37,7 @@ newErrors.email = "Please enter valid email"
 }
 
 if(!formData.whatsapp){
-newErrors.whatsapp = "Please enter you whatsapp number"
+newErrors.whatsapp = "Please enter your whatsapp number"
 }
 
 if(!formData.address){
@@ -39,13 +46,61 @@ newErrors.address = "Please enter your delivery address"
 return newErrors
 }
 
-const submit=(e)=>{
+
+
+
+
+
+const submit= async(e)=>{
 e.preventDefault()
 const validation = validate()
 if(Object.keys(validation).length > 0){
 setErrors(validation)
 return
 }
+
+if(cart.length === 0){
+alert("Select some products")
+return
+}
+
+const orderData={
+name:formData.name,
+email:formData.email,
+whatsapp:formData.whatsapp,
+address:formData.address,
+cart:cart,
+totalPrice: `$${totalPrice}`,
+}
+
+try{
+const response = await axios.post("http://localhost:5000/submit-Data",{orderData})
+console.log(response)
+alert(`${response.data.message} \n Please note your Order Number ${response.data.orderNumber}`)
+clearCart()
+setFormData({
+name:"",
+email:"",
+whatsapp:"",
+address:"",
+})
+}
+
+catch(error){
+console.log(error)
+alert(error?.response?.data?.message || "something went wrong")
+}
+
+
+
+
+
+
+
+
+
+
+
 }
 
   return (
@@ -73,6 +128,8 @@ return
         <div className="hero31-btn">
             <button>Place Order</button>
         </div>
+
+        
         </form>
     </div>
     </div>

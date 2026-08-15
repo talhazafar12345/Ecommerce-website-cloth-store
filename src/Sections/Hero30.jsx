@@ -49,8 +49,12 @@ const del = cart.filter((item)=> item.cartId !==cartId)
 setCart(del)
 }
 
+const clearCart=()=>{
+setCart([])
+}
+
   return (
-   <cartContext.Provider value={{cart,addToCart,increaseQuantity,decreaseQuantity,totalPrice,remove}}>
+   <cartContext.Provider value={{cart,addToCart,increaseQuantity,decreaseQuantity,totalPrice,remove,clearCart}}>
     {children}
 </cartContext.Provider>
   )

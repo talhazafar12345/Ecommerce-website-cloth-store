@@ -683,6 +683,7 @@ color: white;
 
 .hero31-inp{
 margin-left: 40px;
+position: relative;
 }
 
 
@@ -703,7 +704,7 @@ margin-top: 100px;
   cursor: pointer;
   position: absolute;
   left: 650px ;
-  top: 46%;
+  top: 38%;
   transform: translateY(-50%);
   outline: none;
 
@@ -1285,6 +1286,17 @@ margin-top: 50px;
   .errors{
     margin-left: 0;
   }
+
+
+  .change {
+  cursor: pointer;
+  position: absolute;
+  left: 80% ;
+  top: 38%;
+  transform: translateY(-50%);
+  outline: none;
+
+}
 
 
 

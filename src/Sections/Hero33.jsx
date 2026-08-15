@@ -10,11 +10,13 @@ import { useLocation } from "react-router-dom"
 import axios from "axios"
 
 
+
 function Hero33() {
 
 const location = useLocation()
-
 const email = location.state?.email
+const[show,setShow] = useState(false)
+const[change,setChange] = useState(false)
 
 const[errors,setErrors] = useState({})
 const [password,setPassword] = useState({
@@ -75,12 +77,16 @@ alert(error?.response?.data?.message || "something went wrong")
         <form onSubmit={submit}>
 
        <div className="hero31-inp">
-        <input value={password.newPassword} onChange={getInp} placeholder="Enter new password" type="text" name="newPassword" id="" />
+        <input value={password.newPassword} onChange={getInp} placeholder="Enter new password" type={show ? "text" : "password"} name="newPassword" id="" />
+        <span onClick={change} className="change">{show ? "👁️": "👁️" }</span>
+
         {errors.newPassword && <p className="errors">{errors.newPassword}</p>}
        </div>
 
        <div className="hero31-inp">
-        <input value={password.confirmPassword} onChange={getInp} placeholder="Enter confirm new password" type="text" name="confirmPassword" id="" />
+        <input value={password.confirmPassword} onChange={getInp} placeholder="Enter confirm new password" type={change ? "text" : "password"} name="confirmPassword" id="" />
+        <span onClick={change} className="change">{show ? "👁️": "👁️" }</span>
+
         {errors.confirmPassword && <p className="errors">{errors.confirmPassword}</p>}
        </div>
 

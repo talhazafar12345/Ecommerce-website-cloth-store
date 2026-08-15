@@ -91,7 +91,7 @@ setOpen(false)
           Womens Wear
         </Link>
         
-        <Link  className="side-link">
+        <Link to={"/admin-page"}  className="side-link">
           Admin
         </Link>
       </div>

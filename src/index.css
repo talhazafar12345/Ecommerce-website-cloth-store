@@ -699,12 +699,22 @@ font-size: 18px;
 margin-top: 100px;
 }
 
+.change {
+  cursor: pointer;
+  position: absolute;
+  left: 650px ;
+  top: 46%;
+  transform: translateY(-50%);
+  outline: none;
+
+}
+
 .hero31-btn button{
 background-color: #222;
 color: white;
 margin-left: 60px;
 width: 300px;
-margin-top: 20px;
+margin-top: 40px;
 height: 40px;
 font-size: 19px;
 border: none;
@@ -719,6 +729,25 @@ background-color: #666;
 color: red;
 margin-left: 20px;
 }
+
+.hero31-btns{
+margin-left: 60px;
+}
+
+
+.hero14-link{
+  text-align: left;
+  margin-left: 60px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.hero14-link .forget{
+  text-decoration: none;
+  color: red;
+  font-size: 18px;
+}
+
 
 
 

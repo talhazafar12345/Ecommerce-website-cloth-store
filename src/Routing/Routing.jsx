@@ -18,6 +18,8 @@ import Watch from "../Pages/Watch"
 import Hero28 from "../Sections/Hero28"
 import Cart from "../Pages/Cart"
 import Checkout from "../Pages/Checkout"
+import Admin from "../Pages/Admin"
+import Forget from "../Pages/Forget"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -112,6 +114,21 @@ function Routing() {
             path: "/checkout-page",
             element: <Checkout />
         },
+
+
+        {
+            path: "/admin-page",
+            element: <Admin />
+        },
+
+
+        
+        {
+            path: "/forget-page",
+            element: <Forget />
+        },
+
+
 
 
 

@@ -59,7 +59,7 @@ setOpen(false)
           <Link  className="link">Mens Wear</Link>
           <Link  className="link">Womens Wear</Link>
           <Link  className="link">Kids</Link>
-          <Link  className="link">Admin</Link>
+          <Link to={"/admin-page"}  className="link">Admin</Link>
         </div>
         <div className="add-cart">
           <Link to={`/cart-page`}  className="add-link">

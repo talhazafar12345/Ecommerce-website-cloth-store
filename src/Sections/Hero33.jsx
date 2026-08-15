@@ -18,6 +18,15 @@ const email = location.state?.email
 const[show,setShow] = useState(false)
 const[change,setChange] = useState(false)
 
+const tabdeel=()=>{
+setChange(!change)
+}
+
+const badal=()=>{
+setShow(!show)
+}
+
+
 const[errors,setErrors] = useState({})
 const [password,setPassword] = useState({
 newPassword:"",
@@ -67,6 +76,11 @@ console.log(error)
 alert(error?.response?.data?.message || "something went wrong")
 }
 
+setPassword({
+newPassword:"",
+confirmPassword:"",
+})
+
 }
 
 
@@ -78,14 +92,14 @@ alert(error?.response?.data?.message || "something went wrong")
 
        <div className="hero31-inp">
         <input value={password.newPassword} onChange={getInp} placeholder="Enter new password" type={show ? "text" : "password"} name="newPassword" id="" />
-        <span onClick={change} className="change">{show ? "👁️": "👁️" }</span>
+        <span onClick={badal} className="change">{show ? "👁️": "👁️" }</span>
 
         {errors.newPassword && <p className="errors">{errors.newPassword}</p>}
        </div>
 
        <div className="hero31-inp">
         <input value={password.confirmPassword} onChange={getInp} placeholder="Enter confirm new password" type={change ? "text" : "password"} name="confirmPassword" id="" />
-        <span onClick={change} className="change">{show ? "👁️": "👁️" }</span>
+        <span onClick={tabdeel} className="change">{change ? "👁️": "👁️" }</span>
 
         {errors.confirmPassword && <p className="errors">{errors.confirmPassword}</p>}
        </div>

@@ -58,16 +58,17 @@ try{
 const response = await axios.post("http://localhost:5000/admin-Data",{form})
 console.log(response)
 alert(response.data.message)
-setForm({
-email:"",
-password:"",
-})
+
 }
 
 catch(error){
 console.log(error)
 alert(error?.response?.data?.message || "something went wrong")
 }
+setForm({
+email:"",
+password:"",
+})
  
 }
 

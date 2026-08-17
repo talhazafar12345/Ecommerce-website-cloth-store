@@ -20,6 +20,7 @@ import Cart from "../Pages/Cart"
 import Checkout from "../Pages/Checkout"
 import Admin from "../Pages/Admin"
 import Forget from "../Pages/Forget"
+import Dashboard from "../Pages/Dashboard"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -126,6 +127,12 @@ function Routing() {
         {
             path: "/forget-page",
             element: <Forget />
+        },
+
+
+         {
+            path: "/dashboard-page",
+            element: <Dashboard />
         },
 
 

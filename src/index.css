@@ -749,6 +749,279 @@ margin-left: 60px;
   font-size: 18px;
 }
 
+.admin-sidebar {
+  width:260px;
+  height:100vh;
+  background-color: #111;
+  color:white;
+  padding:25px 18px;
+  position:fixed;
+  left:0;
+  top:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+ 
+  z-index:1000;
+}
+
+
+.admin-brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+
+
+.admin-logo {
+  width:50px;
+  height:50px;
+  background:
+  linear-gradient(
+    45deg,
+    #06b6d4,
+    #a855f7
+  );
+
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  font-weight:bold;
+}
+
+
+
+.admin-title h2 {
+  margin:0;
+  font-size:22px;
+}
+
+
+
+.admin-title p {
+  margin:0;
+  color:#c4b5fd;
+  font-size:13px;
+}
+
+
+.admin-menu {
+  list-style:none;
+  padding:0;
+  margin-top:40px;
+}
+
+
+
+.admin-menu-link {
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:14px;
+  margin:10px 0;
+  border-radius:15px;
+  color:#ddd6fe;
+  cursor:pointer;
+
+}
+
+.admin-menu-link svg {
+  font-size:18px;
+}
+
+.admin-menu-link .cat{
+text-decoration: none;
+font-size:18px;
+color:#ddd6fe;
+}
+
+.cat:hover{
+color: #999;
+}
+
+.admin-logout {
+  width:90%;
+  border:0;
+  padding:14px;
+  border-radius:15px;
+  background-color: #666;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0px;
+  margin-bottom: 110px;
+  font-size: 16px;
+}
+
+.admin-logout:hover{
+background-color: black;
+}
+
+
+.hero35-category{
+text-align: center;
+margin-top: 50px;
+}
+
+.hero35-category h1{
+font-size: 27px;
+color: #747474;
+}
+
+.category-top{
+  margin-left:260px;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:30px;
+}
+
+.category-top .inp{
+border: none;
+border-bottom: 3px solid black;
+}
+
+.category-top input{
+  width:300px;
+  height:45px;
+  font-size:16px;
+  border: none;
+  border-bottom: 3px solid black;
+
+}
+
+.category-table{
+  margin-left:360px;
+  margin-top:40px;
+  width:70%;
+}
+
+
+
+table{
+
+  width:100%;
+
+  border-collapse:collapse;
+
+  background:white;
+
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+
+th{
+
+  background:#7c3aed;
+
+  color:white;
+
+  padding:15px;
+
+}
+
+
+
+td{
+
+  padding:15px;
+  text-align:center;
+
+  border-bottom:1px solid #ddd;
+
+}
+
+
+
+.status-active{
+
+  background:#22c55e;
+
+  color:white;
+
+  padding:7px 18px;
+
+  border-radius:20px;
+
+}
+
+.status-inactive{
+
+  background:#22c55e;
+
+  color:white;
+
+  padding:7px 18px;
+
+  border-radius:20px;
+
+}
+
+
+
+.hero15-des{
+text-align: center;
+margin-top: 40px;
+}
+
+.edit-btn{
+  background:#06b6d4;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:20px;
+  margin-right:10px;
+  cursor:pointer;
+}
+
+.add-btn{
+
+  width:120px;
+  background:#7c3aed;
+  color:white;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-size: 17px;
+
+}
+
+
+.status-btn{
+
+  background:#06b6d4;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:20px;
+  margin-right:10px;
+  cursor:pointer;
+
+}
+
+
+
+.del-btn{
+
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:20px;
+  cursor:pointer;
+
+}
+
+
+
 
 
 

@@ -10,9 +10,7 @@ import { useLocation } from "react-router-dom"
 import axios from "axios"
 
 
-
 function Hero33() {
-
 const location = useLocation()
 const email = location.state?.email
 const[show,setShow] = useState(false)

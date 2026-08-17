@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom"
 function Hero32() {
 
 const navigate = useNavigate()
+const navigate1= useNavigate()
 const[errors,setErrors] = useState({})
 const[show,setShow] = useState(false)
 const[form,setForm] = useState({
@@ -58,7 +59,7 @@ try{
 const response = await axios.post("http://localhost:5000/admin-Data",{form})
 console.log(response)
 alert(response.data.message)
-
+navigate1("/dashboard-page")
 }
 
 catch(error){

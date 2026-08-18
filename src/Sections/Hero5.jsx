@@ -43,7 +43,7 @@ newPrice:33,
     <div className="product-container">
       {
       products.map((item,index)=>(
-      <Link to={`/new-arrival/detail/${item.id}`} className="product-card">
+      <Link key={index} to={`/new-arrival/detail/${item.id}`} className="product-card">
        <img src={item.image} alt="" />
        <h2>{item.title}</h2>
        <p>Price: $ {item.newPrice}</p>

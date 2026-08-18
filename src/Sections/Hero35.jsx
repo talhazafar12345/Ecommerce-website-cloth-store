@@ -19,11 +19,18 @@ if(!category){
 return
 }
 try{
+
+const formData = new FormData()
+formData.append("image",image)
+const imageResponse = await axios.post("http://localhost:5000/upload", formData)
+
+
 const newCategory={
 category:category,
-image:URL.createObjectURL(image),
+image:imageResponse.data.image[0],
 status:"Active",
 }
+
 const response = await axios.post("http://localhost:5000/categories",{newCategory})
 console.log(response)
 alert(response.data.message)
@@ -124,6 +131,10 @@ alert(error?.response?.data?.message)
       <input placeholder="Enter Category" value={category} onChange={(e)=>setCategory(e.target.value)} type="text" name="" id="" />
       <input className="inp" placeholder="Enter Image" onChange={(e)=>setImage(e.target.files[0])} type="file" name="" id="" />
       <button onClick={addCategory} className="add-btn">Add</button>
+    </div>
+
+    <div className="category-top">
+      <input placeholder="Enter Price" type="text" name="" id="" />
     </div>
 
     <div className="category-table">

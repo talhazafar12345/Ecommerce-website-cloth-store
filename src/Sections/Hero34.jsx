@@ -43,7 +43,7 @@ function Hero34() {
 
             <li className="admin-menu-link active-link">
               <FaTachometerAlt />
-              <Link  className="cat">Dashboard</Link>
+              <Link to={"/dashboard-front-page"}  className="cat">Dashboard</Link>
 
             </li>
 

@@ -23,6 +23,7 @@ import Forget from "../Pages/Forget"
 import Dashboard from "../Pages/Dashboard"
 import ProductManagement from "../Pages/ProductManagement"
 import CategoryManagement from "../Pages/CategoryManagement"
+import DashboardF from "../Pages/DashboardF"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -148,6 +149,13 @@ function Routing() {
             path: "/product-management-page",
             element: <ProductManagement />
         },
+
+
+         {
+            path: "/dashboard-front-page",
+            element: <DashboardF />
+        },
+
 
 
 

@@ -6,23 +6,19 @@
 import { useState,useEffect } from "react"
 import axios from "axios"
 import { Link } from "react-router-dom"
-function Hero36() {
 
+function Hero36() {
 const[category,setCategory] = useState([])
 const getCategories= async()=>{
 try{
 const response = await axios.get("http://localhost:5000/categories")
 console.log(response)
 setCategory(response.data.data)
-
 }
-
 catch(error){
 console.log(error)
-alert(error?.response?.data?.message || "something went wrong")
 }
 }
-
 
 useEffect(()=>{
 getCategories()

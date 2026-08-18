@@ -11,7 +11,6 @@ import {
   FaTh,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Hero35 from "./Hero35";
 
 
 
@@ -51,13 +50,13 @@ function Hero34() {
             
             <li className="admin-menu-link">
               <FaTh />
-              <Link  className="cat">Categories</Link>
+              <Link to={"/category-management-page"}  className="cat">Categories</Link>
             </li>
 
             
             <li className="admin-menu-link">
               <FaBoxOpen />
-              <Link className="cat">Products</Link>
+              <Link to={"/product-management-page"} className="cat">Products</Link>
             </li>
 
             
@@ -100,7 +99,7 @@ function Hero34() {
 
 
 
-     <Hero35 />
+    
       
     </div>
   )

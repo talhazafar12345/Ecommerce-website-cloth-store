@@ -21,6 +21,8 @@ import Checkout from "../Pages/Checkout"
 import Admin from "../Pages/Admin"
 import Forget from "../Pages/Forget"
 import Dashboard from "../Pages/Dashboard"
+import ProductManagement from "../Pages/ProductManagement"
+import CategoryManagement from "../Pages/CategoryManagement"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -134,6 +136,19 @@ function Routing() {
             path: "/dashboard-page",
             element: <Dashboard />
         },
+
+          {
+            path: "/category-management-page",
+            element: <CategoryManagement />
+        },
+
+
+
+          {
+            path: "/product-management-page",
+            element: <ProductManagement />
+        },
+
 
 
 

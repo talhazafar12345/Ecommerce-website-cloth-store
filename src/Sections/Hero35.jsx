@@ -133,10 +133,6 @@ alert(error?.response?.data?.message)
       <button onClick={addCategory} className="add-btn">Add</button>
     </div>
 
-    <div className="category-top">
-      <input placeholder="Enter Price" type="text" name="" id="" />
-    </div>
-
     <div className="category-table">
       <table>
         <thead>

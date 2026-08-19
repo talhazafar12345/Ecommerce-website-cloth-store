@@ -51,7 +51,7 @@ clearInterval(interval)
       {
       products.map((item,index)=>(
          
-           <Link className="product-card">
+           <Link to={`/product-detail/${item._id}`} className="product-card">
             <img src={item.image} alt="" />
             <h2>{item.name}</h2>
            </Link>

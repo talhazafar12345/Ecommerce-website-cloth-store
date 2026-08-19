@@ -1,5 +1,6 @@
 import Hero34 from "../Sections/Hero34"
 import Hero37 from "../Sections/Hero37"
+import { useEffect } from "react"
 
 
 
@@ -7,6 +8,10 @@ import Hero37 from "../Sections/Hero37"
 
 
 function ProductManagement() {
+
+useEffect(()=>{
+window.scrollTo(0,0)
+},[])
   return (
     <div>
     <Hero34 />

@@ -24,6 +24,7 @@ import Dashboard from "../Pages/Dashboard"
 import ProductManagement from "../Pages/ProductManagement"
 import CategoryManagement from "../Pages/CategoryManagement"
 import DashboardF from "../Pages/DashboardF"
+import Hero38 from "../Sections/Hero38"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -155,6 +156,14 @@ function Routing() {
             path: "/dashboard-front-page",
             element: <DashboardF />
         },
+
+
+
+         {
+            path: "/product/:category",
+            element: <Hero38 />
+        },
+
 
 
 

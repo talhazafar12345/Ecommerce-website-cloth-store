@@ -40,7 +40,7 @@ clearInterval(interval)
         <div className="product-container">
             {
             category.map((item,index)=>(
-             <Link key={index} className="product-card">
+             <Link to={`/product/${item.category}`} key={index} className="product-card">
                <img src={item.image} alt="" />
                <h2>{item.category}</h2>
              </Link>

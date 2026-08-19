@@ -35,7 +35,7 @@ clearInterval(interval)
   return (
     <div>
         <div className="hero36-content">
-        <h1>Our New products</h1>
+        <h1>Shop by Fashion</h1>
         </div>
         <div className="product-container">
             {

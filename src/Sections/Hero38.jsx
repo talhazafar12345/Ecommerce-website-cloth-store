@@ -54,6 +54,10 @@ clearInterval(interval)
            <Link to={`/product-detail/${item._id}`} className="product-card">
             <img src={item.image} alt="" />
             <h2>{item.name}</h2>
+            <p>$ {item.newPrice}</p>
+            {
+            item.oldPrice && <p className="old-price">$ {item.oldPrice}</p>
+            }
            </Link>
       ))
       }

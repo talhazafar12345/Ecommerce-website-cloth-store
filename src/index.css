@@ -578,6 +578,28 @@ text-align: center;
 margin-top: 40px;
 }
 
+.category-input{
+  margin-left:130px;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:30px;
+}
+
+.category-input .inp{
+border: none;
+border-bottom: 3px solid black;
+}
+
+.category-input input{
+  width:300px;
+  height:45px;
+  font-size:16px;
+  border: none;
+  border-bottom: 3px solid black;
+
+}
+
 
 .cart-table {
   width: 100%;

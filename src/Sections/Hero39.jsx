@@ -28,6 +28,12 @@ console.log(error)
 }
 useEffect(()=>{
 getProducts()
+const interval= setInterval(()=>{
+getProducts()
+},2000)
+return ()=>{
+clearInterval(interval)
+}
 },[])
   return (
     <div>
@@ -37,6 +43,10 @@ getProducts()
    <div className="product-detail">
      <img src={product.image} alt="" />
      <h2>{product.name}</h2>
+     <p>New price: $ {product.newPrice}</p>
+     {
+     product.oldPrice && <p>Old price <span className="old-price">$ {product.oldPrice}</span></p>
+     }
      <button onClick={()=>addToCart(product)}>Add to Cart</button>
     </div>
     )

@@ -10,6 +10,8 @@ import axios from "axios"
 function Hero37() {
 const[image,setImage] = useState(null)
 const[name,setName]= useState("")
+const[newPrice,setNewprice] = useState("")
+const[oldPrice,setOldprice] = useState("")
 const[category,setCategory] = useState("")
 const[categories,setCategories] = useState([])
 const[products,setProducts] = useState([])
@@ -26,6 +28,8 @@ const imageResponse = await axios.post("http://localhost:5000/upload",formData)
 const product={
 image:imageResponse.data.image[0],
 name:name,
+newPrice:newPrice,
+oldPrice:oldPrice,
 categoryId:category,
 category:selectedCategory.category,
 status:"Active",
@@ -153,6 +157,11 @@ console.log(error)
         <input value={name} onChange={(e)=>setName(e.target.value)} placeholder="Enter product name" type="text" name="" id="" />
         <input onChange={(e)=>setImage(e.target.files[0])} type="file" name="" id="" />
         <button onClick={addProducts} className="add-btn">Add</button>
+      </div>
+
+      <div className="category-input">
+        <input value={newPrice} onChange={(e)=>setNewprice(e.target.value)} placeholder="Enter new price" type="number" name="" id="" />
+         <input value={oldPrice} onChange={(e)=>setOldprice(e.target.value)} placeholder="Enter old price" type="number" name="" id="" />
       </div>
 
       <div className="hero-19">

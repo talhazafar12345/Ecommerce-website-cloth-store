@@ -10,17 +10,24 @@ import axios from "axios"
 function Hero37() {
 const[image,setImage] = useState(null)
 const[name,setName]= useState("")
+const[category,setCategory] = useState("")
+const[categories,setCategories] = useState([])
 const[products,setProducts] = useState([])
-
 const addProducts= async()=>{
 try{
-
+const selectedCategory = categories.find((item)=>item._id === category)
+if(!selectedCategory){
+alert("Please select Category")
+return
+}
 const formData =  new FormData()
 formData.append("image",image)
 const imageResponse = await axios.post("http://localhost:5000/upload",formData)
 const product={
 image:imageResponse.data.image[0],
 name:name,
+categoryId:category,
+category:selectedCategory.category,
 status:"Active",
 }
 const response = await axios.post("http://localhost:5000/products",{product})
@@ -30,7 +37,6 @@ alert(response.data.message)
 setName("")
 setImage(null)
 getProducts()
-
 }
 catch(error){
   console.log(error)
@@ -38,8 +44,9 @@ catch(error){
 }
 }
 
-const changeStatus=async(index)=>{
 
+
+const changeStatus=async(index)=>{
 try{
 const item= [...products]
 const newStatus = item[index].status === "Active" ? "Inactive" :"Active"
@@ -117,7 +124,23 @@ alert(error?.response?.data?.message)
 
 useEffect(()=>{
 getProducts()
+getCategories()
 },[])
+
+
+const getCategories= async()=>{
+try{
+const response = await axios.get("http://localhost:5000/categories/all")
+console.log(response)
+setCategories(response.data.data)
+}
+
+catch(error){
+console.log(error)
+}
+}
+
+
 
   return (
     <div>
@@ -130,6 +153,24 @@ getProducts()
         <input value={name} onChange={(e)=>setName(e.target.value)} placeholder="Enter product name" type="text" name="" id="" />
         <input onChange={(e)=>setImage(e.target.files[0])} type="file" name="" id="" />
         <button onClick={addProducts} className="add-btn">Add</button>
+      </div>
+
+      <div className="hero-19">
+
+      <select value={category} onChange={(e)=>setCategory(e.target.value)}>
+
+           <option>
+            Select Category
+           </option>
+
+           {
+            categories.map((item,index)=>(
+              <option key={item._id} value={item._id}>
+                {item.category}
+              </option>
+            ))
+           }
+      </select>
       </div>
 
       <div className="category-table">

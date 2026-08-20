@@ -9,28 +9,22 @@ function Hero35() {
 const[category,setCategory] = useState("")
 const[list,setList] = useState([])
 const[image,setImage] = useState(null)
-
 useEffect(()=>{
 getCategories()
 },[])
-
 const addCategory=async()=>{
 if(!category){
 return
 }
 try{
-
 const formData = new FormData()
 formData.append("image",image)
 const imageResponse = await axios.post("http://localhost:5000/upload", formData)
-
-
 const newCategory={
 category:category,
 image:imageResponse.data.image[0],
 status:"Active",
 }
-
 const response = await axios.post("http://localhost:5000/categories",{newCategory})
 console.log(response)
 alert(response.data.message)
@@ -121,7 +115,6 @@ console.log(error)
 alert(error?.response?.data?.message)
 }
 }
-
   return (
     <div>
     <div className="hero35-category">

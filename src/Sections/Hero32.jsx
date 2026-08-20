@@ -59,7 +59,7 @@ try{
 const response = await axios.post("http://localhost:5000/admin-Data",{form})
 console.log(response)
 alert(response.data.message)
-navigate1("/dashboard-page")
+navigate1("/dashboard-front-page")
 }
 
 catch(error){

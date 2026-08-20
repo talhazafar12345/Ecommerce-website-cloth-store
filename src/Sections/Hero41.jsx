@@ -58,6 +58,7 @@ clearInterval(interval)
                     <th>Address</th>
                     <th>Products</th>
                     <th>Total Price</th>
+                    
                 </tr>
             </thead>
 

@@ -11,17 +11,13 @@ import {
   FaTh,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
-
+import { useNavigate } from "react-router-dom";
 
 
 function Hero34() {
+const navigate= useNavigate()
   return (
     <div>
-
-
-
-
      <div>
       <aside className="admin-sidebar">
 
@@ -88,7 +84,7 @@ function Hero34() {
         <div>
 
         </div>
-        <button className="admin-logout">
+        <button onClick={()=>navigate("/")} className="admin-logout">
           Logout
         </button>
 

@@ -9,6 +9,8 @@ import Hero1 from "./Hero1"
 import Footer from "../Footer/Footer"
 import { useContext } from "react"
 import { cartContext } from "./Hero30"
+
+
 function Hero39() {
 const {addToCart} = useContext(cartContext)
 const {id} = useParams()

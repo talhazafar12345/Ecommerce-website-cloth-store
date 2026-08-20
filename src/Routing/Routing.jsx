@@ -20,7 +20,6 @@ import Cart from "../Pages/Cart"
 import Checkout from "../Pages/Checkout"
 import Admin from "../Pages/Admin"
 import Forget from "../Pages/Forget"
-import Dashboard from "../Pages/Dashboard"
 import ProductManagement from "../Pages/ProductManagement"
 import CategoryManagement from "../Pages/CategoryManagement"
 import DashboardF from "../Pages/DashboardF"
@@ -136,10 +135,7 @@ function Routing() {
         },
 
 
-         {
-            path: "/dashboard-page",
-            element: <Dashboard />
-        },
+        
 
           {
             path: "/category-management-page",

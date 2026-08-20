@@ -7,10 +7,9 @@
 
 import { useState,useEffect } from "react"
 import { useParams } from "react-router-dom"
-import Hero1 from "./Hero1"
 import axios from "axios"
 import { Link } from "react-router-dom"
-import Footer from "../Footer/Footer"
+import Hero1 from "./Hero1"
 
 function Hero38() {
 
@@ -64,9 +63,6 @@ clearInterval(interval)
 
     </div>
 
-    <div>
-      <Footer />
-    </div>
       
     </div>
   )

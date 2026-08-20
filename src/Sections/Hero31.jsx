@@ -70,7 +70,7 @@ email:formData.email,
 whatsapp:formData.whatsapp,
 address:formData.address,
 cart:cart,
-totalPrice: `$${totalPrice}`,
+totalPrice: totalPrice,
 }
 
 try{

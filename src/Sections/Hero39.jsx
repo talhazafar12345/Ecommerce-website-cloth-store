@@ -11,6 +11,7 @@ import { useContext } from "react"
 import { cartContext } from "./Hero30"
 
 
+
 function Hero39() {
 const {addToCart} = useContext(cartContext)
 const {id} = useParams()

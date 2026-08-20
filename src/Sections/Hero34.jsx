@@ -62,7 +62,7 @@ function Hero34() {
             
             <li className="admin-menu-link">
               <FaShoppingCart />
-              <span>Orders</span>
+            <Link to={"/orders-page"} className="cat">Orders</Link>
             </li>
 
 

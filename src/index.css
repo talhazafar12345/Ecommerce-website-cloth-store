@@ -1103,6 +1103,19 @@ font-size: 26px;
   line-height:2.0;
 }
 
+.my-orders{
+text-align: center;
+margin-top: 50px;
+margin-left: 0;
+
+}
+
+.my-orders h1{
+color: #555;
+font-size: 28px;
+
+}
+
 .blue {
 background-color: #999;
 

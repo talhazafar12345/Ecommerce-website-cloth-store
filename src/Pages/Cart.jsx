@@ -43,6 +43,8 @@ cart.length === 0 ? (
         <thead>
           <tr>
             <th>Image</th>
+            <th>Product Name</th>
+          
             <th>Price</th>
             <th>Quantity</th>
         
@@ -56,6 +58,7 @@ cart.length === 0 ? (
 
               <tr>
                 <td><img className="item-image" src={item.image} width="100px" alt="" /></td>
+                <td className="newPrice">{item.name}</td>
                  <td>
                   <p className="newPrice">$ {item.newPrice}</p>
                 </td>

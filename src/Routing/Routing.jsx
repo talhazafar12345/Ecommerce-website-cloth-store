@@ -26,6 +26,7 @@ import CategoryManagement from "../Pages/CategoryManagement"
 import DashboardF from "../Pages/DashboardF"
 import Hero38 from "../Sections/Hero38"
 import Hero39 from "../Sections/Hero39"
+import Hero41 from "../Sections/Hero41"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -169,6 +170,13 @@ function Routing() {
             path: "/product-detail/:id",
             element: <Hero39 />
         },
+
+
+           {
+            path: "/orders-page",
+            element: <Hero41 />
+        },
+
 
 
 

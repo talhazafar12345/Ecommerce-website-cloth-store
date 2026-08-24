@@ -115,7 +115,7 @@ newPrice:12,
 
    <div className="product-container">
     {
-    products.map((item,index)=>(
+    products.map((item)=>(
 
      <Link to={`/sun/detail/${item.id}`} className="product-card">
       <img src={item.image} alt="" />

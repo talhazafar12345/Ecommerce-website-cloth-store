@@ -15,11 +15,12 @@ function Hero15() {
 
 const {addToCart} = useContext(cartContext)
 
+const {id} = useParams()
+
 useEffect(()=>{
 window.scrollTo(0,0)
 },[])
 
-const {id,cartId} = useParams()
 const products=[
 
 {
@@ -137,21 +138,7 @@ newPrice:8,
 
 ]
 
-
-let item = null
-
-if (id) {
-    item = products.find(
-        (product) => product.id === Number(id)
-    )
-}
-
-if (cartId) {
-    item = products.find(
-        (product) => `hardcoded${product.id}` === cartId
-    )
-}
-
+const item = products.find((item)=> item.id === Number(id))
 
 
 

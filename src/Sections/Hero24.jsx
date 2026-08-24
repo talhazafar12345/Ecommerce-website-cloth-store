@@ -4,7 +4,6 @@
 
 
 import { useParams } from "react-router-dom"
-import { Link } from "react-router-dom"
 import Footer from "../Footer/Footer"
 import Hero1 from "./Hero1"
 import { useEffect } from "react"

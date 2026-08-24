@@ -6,6 +6,7 @@ import { cartContext } from "../Sections/Hero30"
 import { useContext } from "react"
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
+import Footer from "../Footer/Footer"
 
 
 
@@ -18,7 +19,7 @@ useEffect(()=>{
 window.scrollTo(0,0)
 },[])
 
-const {cart,increaseQuantity,decreaseQuantity,totalPrice,remove} = useContext(cartContext)
+const {cart,increaseQuantity,decreaseQuantity,totalPrice} = useContext(cartContext)
   
   return (
     <div>
@@ -42,8 +43,8 @@ cart.length === 0 ? (
       <table className="cart-table">
         <thead>
           <tr>
+            <th>S.No</th>
             <th>Image</th>
-            <th>Product Name</th>
           
             <th>Price</th>
             <th>Quantity</th>
@@ -54,11 +55,11 @@ cart.length === 0 ? (
 
         <tbody>
           {
-            cart.map((item)=>(
+            cart.map((item,index)=>(
 
               <tr>
+                <td className="newPrice">{index+1}</td>
                 <td><img className="item-image" src={item.image} width="100px" alt="" /></td>
-                <td className="newPrice">{item.name}</td>
                  <td>
                   <p className="newPrice">$ {item.newPrice}</p>
                 </td>
@@ -75,7 +76,6 @@ cart.length === 0 ? (
               </tr>
             ))
           }
-
         </tbody>
       </table>
 
@@ -93,6 +93,7 @@ cart.length === 0 ? (
 }
 
   </div>
+  <Footer />
     </div>
   )
 }

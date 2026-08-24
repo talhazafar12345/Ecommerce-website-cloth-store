@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom"
 
 
-
+import { cartContext } from "./Hero30"
+import { useContext } from "react"
 
 
 
 function Hero11() {
 
+const {addToWishList} = useContext(cartContext)
 
 const products=[
 
@@ -124,10 +126,21 @@ newPrice:11,
 
 
     {
-    products.map((item,index)=>(
+    products.map((item)=>(
 
      <Link to={`/bags/detail/${item.id}`} className="product-card">
+      <div className="product-image">
       <img src={item.image} alt="" />
+
+      <div className="wish-btn">
+        <button onClick={(e)=>{
+          e.preventDefault()
+          addToWishList(item)
+
+        }}>  <i className="fa-solid fa-heart add"></i></button>
+      </div>
+
+      </div>
       <h2>{item.title}</h2>
       <p>$ {item.newPrice}</p>
       <p className="old-price">$ {item.oldPrice}</p>

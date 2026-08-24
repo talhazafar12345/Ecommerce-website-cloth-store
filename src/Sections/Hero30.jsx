@@ -13,14 +13,29 @@ const[cart,setCart] = useState(()=>{
 const savedCart = localStorage.getItem("cart")
 return savedCart? JSON.parse(savedCart):[]
 })
-
-
 useEffect(()=>{
 localStorage.setItem("cart",JSON.stringify(cart))
 },[cart])
 
-const addToCart=(product)=>{
+const[wishList,setWishList] = useState(()=>{
+const savedCart = localStorage.getItem("wishList")
+return savedCart? JSON.parse(savedCart):[]
+})
 
+useEffect(()=>{
+localStorage.setItem("wishList",JSON.stringify(wishList))
+},[wishList])
+
+const addToWishList=(product)=>{
+const cartId = product._id ? `mongoDb${product._id}` :`hardcoded${product.id}`
+const existing = wishList.find((item)=> item.cartId === cartId)
+if(existing){
+return
+}
+setWishList([...wishList,{...product,cartId}])
+}
+
+const addToCart=(product)=>{
 const cartId = product._id ? `mongoDB ${product._id}` : `hardcoded ${product.id}`
 const existing = cart.find((item)=> item.cartId === cartId)
 if(existing){
@@ -49,12 +64,18 @@ const del = cart.filter((item)=> item.cartId !==cartId)
 setCart(del)
 }
 
+const mitana=(cartId)=>{
+const dele = wishList.filter((item)=> item.cartId !==cartId)
+setWishList(dele)
+
+}
+
 const clearCart=()=>{
 setCart([])
 }
 
   return (
-   <cartContext.Provider value={{cart,addToCart,increaseQuantity,decreaseQuantity,totalPrice,remove,clearCart}}>
+   <cartContext.Provider value={{cart,addToCart,increaseQuantity,decreaseQuantity,totalPrice,remove,clearCart,wishList,addToWishList,mitana}}>
     {children}
 </cartContext.Provider>
   )

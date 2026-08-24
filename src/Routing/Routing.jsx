@@ -26,6 +26,7 @@ import DashboardF from "../Pages/DashboardF"
 import Hero38 from "../Sections/Hero38"
 import Hero39 from "../Sections/Hero39"
 import Hero41 from "../Sections/Hero41"
+import WishList from "../Pages/WishList"
 function Routing() {
     const router = createBrowserRouter([
         {
@@ -168,10 +169,17 @@ function Routing() {
         },
 
 
-           {
+        {
             path: "/orders-page",
             element: <Hero41 />
         },
+
+        
+        {
+            path: "/wishlist-page",
+            element: <WishList />
+        },
+
 
 
 

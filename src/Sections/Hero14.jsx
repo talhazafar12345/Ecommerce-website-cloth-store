@@ -116,7 +116,7 @@ newPrice:8,
     <div>
    <div className="product-container">
     {
-    products.map((item,index)=>(
+    products.map((item,)=>(
 
      <Link to={`/kids/detail/${item.id}`} className="product-card">
       <img src={item.image} alt="" />

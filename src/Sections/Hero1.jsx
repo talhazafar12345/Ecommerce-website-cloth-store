@@ -4,7 +4,7 @@
 
 
 
-import { useState,useEffect} from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { cartContext } from "./Hero30";
@@ -12,41 +12,41 @@ import { cartContext } from "./Hero30";
 
 function Hero1() {
 
-const {cart} = useContext(cartContext)
+  const { cart,wishList } = useContext(cartContext)
 
 
-const[open,setOpen] = useState(false)
-useEffect(() => {
-  return () => {
-    document.body.style.position = "";
-    document.body.style.width = "";
-    document.body.style.top = "";
+  const [open, setOpen] = useState(false)
+  useEffect(() => {
+    return () => {
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.top = "";
 
-  };
+    };
 
-}, []);
-const openMenu=()=>{
- const scrollY = window.scrollY
- document.body.style.position ="fixed"
- document.body.style.width ="100%"
- document.body.style.top = `-${scrollY}px`
- setOpen(true)
-}
+  }, []);
+  const openMenu = () => {
+    const scrollY = window.scrollY
+    document.body.style.position = "fixed"
+    document.body.style.width = "100%"
+    document.body.style.top = `-${scrollY}px`
+    setOpen(true)
+  }
 
-const closeMenu =()=>{
-const scrollY = Math.abs(parseInt(document.body.style.top || 0) )
-document.body.style.position = ""
-document.body.style.width = ""
-window.scrollTo(0, scrollY)
-setOpen(false)
-}
+  const closeMenu = () => {
+    const scrollY = Math.abs(parseInt(document.body.style.top || 0))
+    document.body.style.position = ""
+    document.body.style.width = ""
+    window.scrollTo(0, scrollY)
+    setOpen(false)
+  }
 
 
 
-  
+
   return (
 
-      <div className="hero1-container">
+    <div className="hero1-container">
       <div className="navBar">
         <div className="navImage">
           <img
@@ -55,19 +55,30 @@ setOpen(false)
           />
         </div>
         <div className="navLinks">
-          <Link  className="link">Collections</Link>
-          <Link  className="link">Mens Wear</Link>
-          <Link  className="link">Womens Wear</Link>
-          <Link  className="link">Kids</Link>
-          <Link to={"/admin-page"}  className="link">Admin</Link>
+          <Link className="link">Collections</Link>
+          <Link className="link">Mens Wear</Link>
+          <Link className="link">Womens Wear</Link>
+          <Link className="link">Kids</Link>
+          <Link to={"/admin-page"} className="link">Admin</Link>
         </div>
-        <div className="add-cart">
-          <Link to={`/cart-page`}  className="add-link">
-          <i className="fa-solid fa-cart-arrow-down add"></i>
-          <span className="cart-count">{cart.length}</span>
-          </Link>
+
+        <div className="cart-div">
+          <div className="add-carts">
+            <Link to={"/wishlist-page"} className="add-link">
+              <i className="fa-solid fa-heart add"></i>
+              <span className="cart-count">{wishList.length}</span>
+            </Link>
+          </div>
+
+          <div className="add-cart">
+            <Link to={`/cart-page`} className="add-link">
+              <i className="fa-solid fa-cart-arrow-down add"></i>
+              <span className="cart-count">{cart.length}</span>
+            </Link>
+          </div>
         </div>
-        <div onClick={openMenu}  className="hamburger">
+
+        <div onClick={openMenu} className="hamburger">
           ☰
         </div>
       </div>
@@ -82,21 +93,21 @@ setOpen(false)
           ✕
         </div>
         <Link to={"/"} className="side-link">
-        Collections
+          Collections
         </Link>
         <Link className="side-link">
           Mens Wear
         </Link>
-        <Link  className="side-link">
+        <Link className="side-link">
           Womens Wear
         </Link>
-        
-        <Link to={"/admin-page"}  className="side-link">
+
+        <Link to={"/admin-page"} className="side-link">
           Admin
         </Link>
       </div>
     </div>
-    
+
   );
 }
 export default Hero1;

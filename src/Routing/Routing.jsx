@@ -33,56 +33,56 @@ function Routing() {
             path: "/",
             element: <Home />
         },
-        
 
-         {
+
+        {
             path: "/bags-page",
             element: <Bags />
         },
 
-          {
+        {
             path: "/kids-page",
             element: <Kids />
         },
 
-          {
+        {
             path: "/shoes-page",
             element: <Shoes />
         },
 
-           {
+        {
             path: "/sports-page",
             element: <Sports />
         },
 
-            {
+        {
             path: "/sun-page",
             element: <Sun />
         },
 
-              {
+        {
             path: "/watch-page",
             element: <Watch />
         },
 
 
-             {
+        {
             path: "/sun-page",
             element: <Sun />
         },
 
-          {
+        {
             path: "/bags/detail/:id",
             element: <Hero12 />
         },
 
-         {
+        {
             path: "/kids/detail/:id",
             element: <Hero15 />
         },
 
 
-          {
+        {
             path: "/shoes/detail/:id",
             element: <Hero17 />
         },
@@ -100,7 +100,7 @@ function Routing() {
         },
 
 
-        
+
         {
             path: "/watch/detail/:id",
             element: <Hero27 />
@@ -111,13 +111,13 @@ function Routing() {
             element: <Hero28 />
         },
 
-        
+
         {
             path: "/cart-page",
             element: <Cart />
         },
 
-         {
+        {
             path: "/checkout-page",
             element: <Checkout />
         },
@@ -129,41 +129,41 @@ function Routing() {
         },
 
 
-        
+
         {
             path: "/forget-page",
             element: <Forget />
         },
 
 
-        
 
-          {
+
+        {
             path: "/category-management-page",
             element: <CategoryManagement />
         },
 
 
 
-          {
+        {
             path: "/product-management-page",
             element: <ProductManagement />
         },
 
 
-         {
+        {
             path: "/dashboard-front-page",
             element: <DashboardF />
         },
 
 
 
-         {
+        {
             path: "/product/:category",
             element: <Hero38 />
         },
 
-           {
+        {
             path: "/product-detail/:id",
             element: <Hero39 />
         },
@@ -174,12 +174,20 @@ function Routing() {
             element: <Hero41 />
         },
 
-        
+
         {
             path: "/wishlist-page",
             element: <WishList />
         },
 
+        {
+            path: "/detail/:cartId",
+            element: <Hero12 />
+        },
+
+
+
+        
 
 
 
@@ -200,7 +208,12 @@ function Routing() {
 
 
 
-     
+
+
+
+
+
+
     ])
     return (
         <RouterProvider router={router} />

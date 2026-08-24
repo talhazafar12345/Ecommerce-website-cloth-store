@@ -11,10 +11,12 @@ import Hero1 from "./Hero1"
 import axios from "axios"
 import { Link } from "react-router-dom"
 import Footer from "../Footer/Footer"
+import { cartContext } from "./Hero30"
+import { useContext } from "react"
 
 function Hero38() {
 
-
+const {addToWishList} = useContext(cartContext)
 const {category} = useParams()
 const[products,setProducts] = useState([])
 
@@ -49,10 +51,20 @@ clearInterval(interval)
     <div className="product-container">
 
       {
-      products.map((item,index)=>(
+      products.map((item)=>(
          
            <Link to={`/product-detail/${item._id}`} className="product-card">
+
+            <div className="product-image">
             <img src={item.image} alt="" />
+            <div className="wish-btn">
+              <button onClick={(e)=>{
+                e.preventDefault()
+                addToWishList(item)
+              }}><i className="fa-solid fa-heart add"></i></button>
+            </div>
+            </div>
+
             <h2>{item.name}</h2>
             <p>$ {item.newPrice}</p>
             {

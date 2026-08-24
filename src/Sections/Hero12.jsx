@@ -11,14 +11,14 @@ import { useContext } from "react"
 
 function Hero12() {
 
-    const { addToCart } = useContext(cartContext)
+    const { addToCart,wishList } = useContext(cartContext)
 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
 
 
-    const { id } = useParams()
+    const { id,cartId } = useParams()
     const products = [
 
         {
@@ -141,7 +141,29 @@ function Hero12() {
     ]
 
 
-    const item = products.find((item) => item.id === Number(id))
+    let item = null
+    
+   if(id){
+    item = products.find((item)=> item.id === Number(id))
+   }
+
+   if(cartId){
+    item = wishList.find((item)=> item.cartId === cartId)
+   }
+
+   if(!item){
+   return(
+
+    <div>
+    <Hero1 />
+
+    <h2>No Products</h2>
+    <div className="fti">
+        <Footer />
+    </div>
+    </div>
+   )
+   }
 
     return (
         <div>
@@ -151,7 +173,7 @@ function Hero12() {
 
             <div className="product-detail">
                 <img src={item.image} alt="" />
-                <h2> {item.title}</h2>
+                <h2> {item.name}</h2>
                 <p className="des">{item.description}</p>
                 <p>New Price: $ {item.newPrice}</p>
                 {

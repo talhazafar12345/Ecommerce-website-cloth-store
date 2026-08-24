@@ -7,10 +7,19 @@ import Hero1 from "../Sections/Hero1"
 import { cartContext } from "../Sections/Hero30"
 import { useContext } from "react"
 import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 
 function WishList() {
+
+const navigate= useNavigate()
+
+const change=(item)=>{
+navigate(`/detail/${item.cartId}`)
+
+}
+
 useEffect(()=>{
 window.scrollTo(0,0)
 },[])
@@ -38,6 +47,7 @@ const {wishList,mitana} = useContext(cartContext)
                 <th>Product Image</th>
                 <th>Price</th>
                 <th>Action</th>
+                <th>Button</th>
             </tr>
         </thead>
 
@@ -51,6 +61,7 @@ const {wishList,mitana} = useContext(cartContext)
              <td><img className="item-image" src={item.image} width="100px" alt="" /></td>
              <td className="newPrice">$ {item.newPrice}</td>
              <td><button className="del-btn" onClick={()=>mitana(item.cartId)}>Remove</button></td>
+             <td><button onClick={()=>change(item)}>View</button></td>
            </tr>
             ))
             }

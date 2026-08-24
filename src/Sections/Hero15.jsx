@@ -4,7 +4,6 @@
 
 
 import { useParams } from "react-router-dom"
-import { Link } from "react-router-dom"
 import Footer from "../Footer/Footer"
 import Hero1 from "./Hero1"
 import { useEffect } from "react"
@@ -20,7 +19,7 @@ useEffect(()=>{
 window.scrollTo(0,0)
 },[])
 
-const {id} = useParams()
+const {id,cartId} = useParams()
 const products=[
 
 {
@@ -138,7 +137,21 @@ newPrice:8,
 
 ]
 
-const item = products.find((item)=> item.id === Number(id))
+
+let item = null
+
+if (id) {
+    item = products.find(
+        (product) => product.id === Number(id)
+    )
+}
+
+if (cartId) {
+    item = products.find(
+        (product) => `hardcoded${product.id}` === cartId
+    )
+}
+
 
 
 

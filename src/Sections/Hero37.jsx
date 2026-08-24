@@ -4,7 +4,6 @@
 
 
 
-import Hero1 from "./Hero1"
 import { useState,useEffect } from "react"
 import axios from "axios"
 function Hero37() {
@@ -91,7 +90,7 @@ alert(response.data.message)
 
 catch(error){
 console.log(error)
-alert(errror?.response?.data?.message || "Something went wrong")
+alert(error?.response?.data?.message || "Something went wrong")
 }
 
 }

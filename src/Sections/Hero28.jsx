@@ -13,7 +13,7 @@ function Hero28() {
 
 const {addToCart} = useContext(cartContext)
 
-useEffect((item)=>{
+useEffect(()=>{
 window.scrollTo(0,0)
 },[])
 
@@ -62,7 +62,7 @@ const item = products.find((item)=> item.id === Number(id))
     <Hero1 />
       <div className="product-detail">
                 <img src={item.image} alt="" />
-                <h2> {item.title}</h2>
+                <h2> {item.name}</h2>
                  <p className="des">{item.description}</p>
                 <p>Price: $ {item.newPrice}</p>
                 <button onClick={()=>addToCart(item)}>Add To Cart</button>

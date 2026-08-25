@@ -1,6 +1,5 @@
 import Footer from "../Footer/Footer"
 import Hero1 from "./Hero1"
-import Hero23 from "./Hero23"
 import Hero26 from "./Hero26"
 
 function Hero25() {

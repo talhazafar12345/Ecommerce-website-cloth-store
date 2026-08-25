@@ -156,7 +156,6 @@ function Hero12() {
 
     <div>
     <Hero1 />
-
     <h2>No Products</h2>
     <div className="fti">
         <Footer />

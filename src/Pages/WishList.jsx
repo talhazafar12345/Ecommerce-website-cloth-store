@@ -44,10 +44,9 @@ const {wishList,mitana} = useContext(cartContext)
         <thead>
             <tr>
                 <th>S.NO</th>
-                <th>Product Image</th>
-                <th>Price</th>
+                <th> Image</th>
                 <th>Action</th>
-                <th>Button</th>
+                <th> View</th>
             </tr>
         </thead>
 
@@ -59,9 +58,8 @@ const {wishList,mitana} = useContext(cartContext)
            <tr>
              <td className="newPrice">{index+1}</td>
              <td><img className="item-image" src={item.image} width="100px" alt="" /></td>
-             <td className="newPrice">$ {item.newPrice}</td>
              <td><button className="del-btn" onClick={()=>mitana(item.cartId)}>Remove</button></td>
-             <td><button onClick={()=>change(item)}>View</button></td>
+             <td><button className="del-btn"  onClick={()=>change(item)}>View</button></td>
            </tr>
             ))
             }

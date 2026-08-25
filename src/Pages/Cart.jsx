@@ -45,7 +45,6 @@ cart.length === 0 ? (
           <tr>
             <th>S.No</th>
             <th>Image</th>
-          
             <th>Price</th>
             <th>Quantity</th>
         

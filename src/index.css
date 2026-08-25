@@ -534,8 +534,8 @@ position: relative;
 }
 
 .wish-btn button i {
-  color: red;
-  font-size: 18px;
+  color: gray;
+  font-size: 22px;
 }
 
 
@@ -1653,7 +1653,7 @@ td {
   }
 
   .item-image {
-    width: 100%;
+    width: 50%;
   }
 
   .item-images{
@@ -1671,10 +1671,10 @@ td {
     font-size: 14px;
   }
 
-  
-.del-btn{
-  width: 100%;
-}
+   .del-btn{
+    width: 100%;
+   }
+
 
   .qty-box {
     gap: 6px;
@@ -1759,6 +1759,10 @@ td {
 
   .hero14-link {
     margin-left: 40px;
+  }
+
+  .wish-btn button i{
+    font-size: 18px;
   }
 
 

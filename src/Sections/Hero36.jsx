@@ -34,7 +34,11 @@ clearInterval(interval)
 
   return (
     <div>
-        <div className="hero36-content">
+  
+       {
+        category.length > 0 &&  (
+          <>
+          <div className="hero36-content">
         <h1>Shop by Fashion</h1>
         </div>
         <div className="product-container">
@@ -47,6 +51,10 @@ clearInterval(interval)
             ))
             }
         </div>
+          </>
+        )
+       }
+        
     </div>
   )
 }

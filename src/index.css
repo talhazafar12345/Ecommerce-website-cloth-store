@@ -655,7 +655,7 @@ position: relative;
 .cart-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #555;
+  background-color: gray;
 }
 
 .cart-table thead {
@@ -676,7 +676,7 @@ position: relative;
 .cart-table td {
   padding: 18px;
   text-align: center;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 3px dotted black;
 }
 
 .cart-table tbody tr {
@@ -987,24 +987,20 @@ position: relative;
 table {
 
   width: 100%;
-
   border-collapse: collapse;
-
   background: white;
-
   box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
-
 }
 
 
 
 th {
 
-  background: #7c3aed;
-
+  background-color: #111;
   color: white;
-
   padding: 15px;
+  border-right: 3px dotted #555;
+
 
 }
 
@@ -1014,8 +1010,9 @@ td {
 
   padding: 15px;
   text-align: center;
+  border-right: 3px dotted #ddd;
 
-  border-bottom: 1px solid #ddd;
+
 
 }
 
@@ -1190,6 +1187,11 @@ margin-top: 90px;
 
 .my-wishe h2{
   margin-top: 80px;
+}
+
+.emp{
+  text-align: center;
+  font-size: 24px;
 }
 
 

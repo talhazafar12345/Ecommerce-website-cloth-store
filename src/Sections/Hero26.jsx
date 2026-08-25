@@ -146,9 +146,13 @@ newPrice:120,
       </div>
 
       </div>
-      <h2>{item.title}</h2>
-      <p>{item.newPrice}</p>
-      <p className="old-price">{item.oldPrice}</p>
+      <h2>{item.name}</h2>
+      <p className="price-new"> $ {item.newPrice}</p>
+  {
+      item.oldPrice && (
+      <p><span className="old-price">$ {item.oldPrice}</span> </p>
+     )
+    }
      </Link>
 
     ))

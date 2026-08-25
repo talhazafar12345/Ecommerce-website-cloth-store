@@ -63,7 +63,7 @@ id:53,
 image:"https://chawkbazar.vercel.app/assets/images/products/p-7-m.png",
 name:"Regular Fit Crew-neck T-shirt",
 description:"From casual days out to parties, dinners and other events that call for a dressier look, a short sleeve shirt is a versatile piece that works for all kinds of occasions.",
-newPrice:28,
+newPrice:88,
 oldPrice:65,
 },
 

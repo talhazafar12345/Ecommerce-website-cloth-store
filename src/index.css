@@ -667,13 +667,17 @@ position: relative;
   color: white;
 }
 
+.price-new{
+color: black !important;
+}
+
 .cart-table th {
   padding: 18px;
   text-align: center;
   font-size: 18px;
 }
 
-.cart-table td {
+.cart-table td { 
   padding: 18px;
   text-align: center;
   border-bottom: 3px dotted black;

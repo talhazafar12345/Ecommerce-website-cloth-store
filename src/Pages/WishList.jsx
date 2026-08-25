@@ -31,11 +31,11 @@ const {wishList,mitana} = useContext(cartContext)
     <Hero1 />
 
 
-    <div className="cart-container">
+    <div className="cart-container containers">
 
     {
     wishList.length === 0  ? (
-    <h2><i className="fa-solid fa-heart add"></i> Your wishlist is empty</h2>
+    <h2 className="my-wish"><i className="fa-solid fa-heart add"></i> Your wishlist is empty</h2>
     ) :(
 
      <div className="table-wrappers">

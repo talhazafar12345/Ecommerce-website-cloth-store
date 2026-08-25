@@ -35,7 +35,7 @@ const {cart,increaseQuantity,decreaseQuantity,totalPrice} = useContext(cartConte
 {
 cart.length === 0 ? (
 
-<h1> 🛒 Your Cart is empty </h1>
+<h1 className="emp"> 🛒 Your Cart is empty </h1>
 ): (
 
     <div className="table-wrapper">

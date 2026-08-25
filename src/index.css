@@ -1179,6 +1179,19 @@ td {
 
 }
 
+.containers{
+margin-top: 90px;
+}
+
+
+.my-wish{
+  text-align: center;
+}
+
+.my-wishe h2{
+  margin-top: 80px;
+}
+
 
 
 
@@ -1765,6 +1778,26 @@ td {
     font-size: 18px;
   }
 
+  .containers{
+margin-top: 60px;
+  }
+
+  .my-wishe h2{
+  font-size: 20px;
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+  }
+
+  .my-wish{
+  font-size: 20px;
+  }
+
+  .emp{
+    font-size: 20px !important;
+  }
+
+ 
 
 
 

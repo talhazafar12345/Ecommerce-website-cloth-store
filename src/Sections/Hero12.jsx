@@ -14,7 +14,7 @@ function Hero12() {
     const { addToCart,wishList } = useContext(cartContext)
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0,0)
     }, [])
 
 
@@ -154,9 +154,9 @@ function Hero12() {
    if(!item){
    return(
 
-    <div>
+    <div className="my-wishe">
     <Hero1 />
-    <h2>No Products</h2>
+    <h2 className="my-wish"><i className="fa-solid fa-heart add"></i> Wishlist view product is empty</h2>
     <div className="fti">
         <Footer />
     </div>

@@ -65,14 +65,14 @@ function Hero1() {
         <div className="cart-div">
           <div className="add-carts">
             <Link to={"/wishlist-page"} className="add-link">
-              <i className="fa-solid fa-heart add"></i>
+              <i className="fa-solid fa-heart adds"></i>
               <span className="cart-count">{wishList.length}</span>
             </Link>
           </div>
 
           <div className="add-cart">
             <Link to={`/cart-page`} className="add-link">
-              <i className="fa-solid fa-cart-arrow-down add"></i>
+              <i className="fa-solid fa-cart-arrow-down adds "></i>
               <span className="cart-count">{cart.length}</span>
             </Link>
           </div>

@@ -19,7 +19,7 @@ function Hero8() {
           </p>
         </div>
 
-        <div className="footer-column">
+        <div className="footer-column col">
           <h3>Quick Links</h3>
 
           <Link >Men's Wear</Link>

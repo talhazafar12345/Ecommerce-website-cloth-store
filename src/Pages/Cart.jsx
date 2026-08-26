@@ -65,7 +65,7 @@ cart.length === 0 ? (
                 <td>
                   <div className="qty-box">
                     <button className="qty-btn" onClick={()=>decreaseQuantity(item.cartId)}>-</button>
-                    <span className="newPrice">{item.quantity}</span>
+                    <span className="newPrice eee">{item.quantity}</span>
                     <button className="qty-btn" onClick={()=>increaseQuantity(item.cartId)}>+</button>
                   </div>
                   

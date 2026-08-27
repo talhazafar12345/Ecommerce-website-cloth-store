@@ -80,9 +80,9 @@ function Hero6() {
     },
     
     
-    1101: {
-      slidesPerView: 6,
-      spaceBetween: 10,
+    921: {
+      slidesPerView: 5,
+      spaceBetween: 8,
     },
   }}
   className="hero6-swiper"

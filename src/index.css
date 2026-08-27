@@ -75,7 +75,6 @@ body {
 .add-link {
   position: relative;
   display: inline-block;
-  margin-right: 100px;
   margin: 20px;
 }
 
@@ -1298,8 +1297,6 @@ margin-top: 90px;
     width: 120px;
     text-align: left;
     margin-left: 13px;
-
-
   }
 
 
@@ -2572,7 +2569,7 @@ margin-top: 60px;
     font-size: 35px;
     width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 170px;
   }
 
   .hero-heading button {
@@ -3230,7 +3227,7 @@ margin-top: 60px;
     font-size: 35px;
     width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 180px;
   }
 
   .hero-heading button {
@@ -3734,7 +3731,157 @@ margin-top: 60px;
 
 
 @media screen and (min-width: 921px) and (max-width: 1030px){
+
   
+  .navImage img {
+    width: 120px;
+    text-align: left;
+    margin-left: 13px;
+  }
+
+  .navLinks .link{
+    font-size: 16px;
+    white-space: nowrap;
+    position: relative;
+    right: 70px;
+  }
+
+  .hero-heading h1{
+    font-size: 23px;
+  }
+
+  .hero-heading button{
+    margin-left: 60px;
+  }
+
+  .hero2-image img{
+    margin-right: 60px;
+  }
+
+
+  .hero3-flex{
+    gap: 10px;
+  }
+
+
+  .hero3-image img{
+   width: 300px;
+
+  }
+
+  .hero4-image img{
+    width: 125px;
+  }
+
+  .product-card img{
+    width: 220px;
+    height: 290px;
+  }
+
+  .product-card h2{
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+
+  
+  .hero6-slider {
+    margin-top: 70px;
+    width: 940px;
+
+  }
+
+  .hero6-name{
+    font-size: 15px;
+  }
+
+  .hero7-content{
+    width: 220px;
+  }
+
+  .hero7-content img{
+    width: 50px;
+  }
+
+  .hero7-content h2{
+    font-size: 17px;
+  }
+
+  .footer{
+    margin-left: 0;
+  }
+
+    .del-btn{
+    font-size: 15px;
+  }
+
+
+}
+
+
+
+
+@media screen and (min-width: 1031px) and (max-width:1300px){
+
+
+
+  .product-card img{
+    width: 280px;
+    height: 390px;
+  }
+
+  .navLinks .link{
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+
+  .navImage img {
+    width: 140px;
+    text-align: left;
+    margin-left: 13px;
+  }
+
+
+  .product-card h2{
+    font-size: 18px;
+    padding-top: 10px;
+    width: 80%;
+    margin: auto;
+    line-height: 1.7;
+  }
+
+
+   .hero7-content{
+    width: 280px;
+  }
+
+  .hero7-content img{
+    width: 50px;
+  }
+
+  .hero7-content h2{
+    font-size: 18px;
+  }
+
+  
+    .hero6-slider {
+    margin-top: 70px;
+    width: 1100px;
+
+  }
+
+
+  .del-btn{
+    font-size: 18px;
+  }
+
+
+
+
+
 }
 
 

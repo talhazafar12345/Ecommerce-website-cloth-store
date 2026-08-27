@@ -221,8 +221,8 @@ body {
 /* swiper start */
 .hero6-slider {
   position: relative;
-  width: 1250px;
-  margin: 0 auto;
+  width: 1100px;
+  margin:  auto;
   overflow: hidden;
   direction: ltr;
   margin-top: 80px;
@@ -3788,10 +3788,24 @@ margin-top: 60px;
 
   
   .hero6-slider {
-    margin-top: 70px;
-    width: 940px;
-
+    margin-top: 60px;
+    width: 900px;
   }
+
+  .hero6-slide img{
+    width: 95%;
+  }
+
+  .hero6-prev{
+    position: absolute;
+    left: -10px;
+  }
+
+   .hero6-next{
+    position: absolute;
+    right: -10px;
+  }
+
 
   .hero6-name{
     font-size: 15px;

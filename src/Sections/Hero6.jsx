@@ -80,7 +80,7 @@ function Hero6() {
     },
     
     
-    921: {
+    1024: {
       slidesPerView: 5,
       spaceBetween: 8,
     },

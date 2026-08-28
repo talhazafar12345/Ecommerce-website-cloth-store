@@ -4,6 +4,8 @@ import { useState } from "react"
 import { cartContext } from "./Hero30"
 import { useContext } from "react"
 import axios from "axios"
+import Swal from "sweetalert2";
+
 
 
 function Hero31() {
@@ -53,43 +55,56 @@ return newErrors
 
 const submit= async(e)=>{
 e.preventDefault()
+
 const validation = validate()
 if(Object.keys(validation).length > 0){
 setErrors(validation)
 return
 }
 
-if(cart.length === 0){
-alert("Select some products")
-return
-}
 
-const orderData={
-name:formData.name,
-email:formData.email,
-whatsapp:formData.whatsapp,
-address:formData.address,
-cart:cart,
-totalPrice: totalPrice,
-}
+  Swal.fire({
+      title: "Order Placed",
+      text: "Your order has been placed successfully.",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
 
-try{
-const response = await axios.post("http://localhost:5000/submit-Data",{orderData})
-console.log(response)
-alert(`${response.data.message} \n Please note your Order Number ${response.data.orderNumber}`)
-clearCart()
-setFormData({
-name:"",
-email:"",
-whatsapp:"",
-address:"",
-})
-}
+    clearCart()
 
-catch(error){
-console.log(error)
-alert(error?.response?.data?.message || "something went wrong")
-}
+    setFormData({
+    name:"",
+    email:"",
+    whatsapp:"",
+    address:"",
+    })
+
+// const orderData={
+// name:formData.name,
+// email:formData.email,
+// whatsapp:formData.whatsapp,
+// address:formData.address,
+// cart:cart,
+// totalPrice: totalPrice,
+// }
+
+// try{
+// const response = await axios.post("http://localhost:5000/submit-Data",{orderData})
+// console.log(response)
+// // alert(`${response.data.message} \n Please note your Order Number ${response.data.orderNumber}`)
+// clearCart()
+// setFormData({
+// name:"",
+// email:"",
+// whatsapp:"",
+// address:"",
+// })
+// }
+
+// catch(error){
+// console.log(error)
+// alert(error?.response?.data?.message || "something went wrong")
+// }
 
 
 

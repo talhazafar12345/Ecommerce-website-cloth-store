@@ -99,25 +99,11 @@ clearInterval(interval)
 
             </table>
          </div>
-       
-       
        </>
-
-
-
-
-
 
         )
         }
     </div>
-
-
-
-
-
-
-      
     </div>
   )
 }
